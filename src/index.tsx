@@ -6,13 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import {ComponentPreviews, useInitial} from "./dev";
 import {DevSupport} from "@react-buddy/ide-toolbox";
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
+import {ChakraProvider} from "@chakra-ui/react";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element:
             <DevSupport ComponentPreviews={ComponentPreviews} useInitialHook={useInitial}>
-                <App/>
+                <ChakraProvider>
+                    <App/>
+                </ChakraProvider>
             </DevSupport>,
     },
 ]);
