@@ -1,8 +1,8 @@
 import * as React from "react";
-import {StackProps, VStack} from "@chakra-ui/react";
+import {StackDivider, StackProps, VStack} from "@chakra-ui/react";
 
 interface FullScreenLinkProps extends StackProps {
-    isDarkBackground: boolean
+    isDarkBackground?: boolean
 }
 
 export default function FullScreenSection({isDarkBackground, children, ...boxProps}: FullScreenLinkProps) {
@@ -12,7 +12,10 @@ export default function FullScreenSection({isDarkBackground, children, ...boxPro
             backgroundColor={boxProps.backgroundColor}
             color={isDarkBackground ? "white" : "black"}
         >
-            <VStack maxWidth="1280px" minHeight="100vh" {...boxProps}>
+            <VStack maxWidth="1280px" minHeight="100vh" {...boxProps}
+                    align="stretch"
+                    divider={<StackDivider borderColor="white"/>}
+            >
                 {children}
             </VStack>
         </VStack>

@@ -1,18 +1,18 @@
-import {Box, Heading, VStack} from "@chakra-ui/react";
-import FullScreenSection from "./FullScreenSection";
+import {Box, VStack} from "@chakra-ui/react";
+import ProjectsSection from "./ProjectsSection";
+import IntroSection from "./IntroSection";
+import AboutSection from "./AboutSection";
+import BlogSection from "./BlogSection";
 
 export default function Content() {
     return (
-        <FullScreenSection isDarkBackground="black"
-                           backgroundColor="#2A4365"
-                           justifyContent="center"
-                           alignItems="flex-start"
-        >
-            <Box>
-                <VStack>
-                    <Heading>Kidoni Software</Heading>
-                </VStack>
-            </Box>
-        </FullScreenSection>
+        <Box>
+            <VStack>
+                <IntroSection/>
+                <ProjectsSection/>
+                <BlogSection/>
+                <AboutSection/>
+            </VStack>
+        </Box>
     );
 }

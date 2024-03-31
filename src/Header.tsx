@@ -1,20 +1,39 @@
-import {Box, Flex, Heading, Spacer, Text} from "@chakra-ui/react";
+import {Box, Flex, IconButton, LinkProps, Menu, MenuButton, MenuItem, MenuList, Spacer} from "@chakra-ui/react";
+import {GrProjects} from "react-icons/gr";
+import {TbWritingSign} from "react-icons/tb";
+import {FaBars, FaInfo} from "react-icons/fa6";
 
 export default function Header() {
+
+    const handleClick = (anchor: LinkProps) => () => {
+        const id = `${anchor.href}`;
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    };
+
     return (
         <Box position="fixed"
              top={0}
              left={0}
-             right={0}
-             color="white"
-             justifyContent="center">
-            <Heading>Kidoni Software</Heading>
+             right={0}>
             <nav>
-                <Flex gap="8" p="4">
+                <Flex p={8}>
                     <Spacer/>
-                    <Text>Projects</Text>
-                    <Text>Blog</Text>
-                    <Text>About</Text>
+                    <Menu>
+                        <MenuButton as={IconButton} icon={<FaBars/>} colorScheme="blue" size="lg" isRound={true}/>
+                        <MenuList color="black">
+                            <MenuItem as="a" href="/#projects-section" icon={<GrProjects size="18px"/>}>Featured
+                                Projects</MenuItem>
+                            <MenuItem as="a" href="/#blog-section" icon={<TbWritingSign size="18px"/>}>Blog</MenuItem>
+                            <MenuItem as="a" href="/#about-section"
+                                      icon={<FaInfo size="18px" color="blue"/>}>About</MenuItem>
+                        </MenuList>
+                    </Menu>
                 </Flex>
             </nav>
         </Box>

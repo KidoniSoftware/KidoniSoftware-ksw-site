@@ -1,23 +1,29 @@
 import React from "react";
-import {Box, Flex, Spacer, Text, VStack} from "@chakra-ui/react";
+import {Box, Divider, Flex, HStack, Spacer, StackDivider, Text, VStack} from "@chakra-ui/react";
+import {FaRegCopyright} from "react-icons/fa";
 
 export default function Footer() {
     return (
         <footer>
-            <Box color="white" margin="0 auto">
-                <VStack spacing={4}>
+            <Box color="black" margin="0 auto">
+                <Divider borderColor="gray"/>
+                <VStack spacing={4}
+                        divider={<StackDivider borderColor="gray"/>}
+                >
                     <Flex gap={8}>
                         <VStack>
-                            <Text color="white">stuff</Text>
-                            <Text color="white">stuff</Text>
+                            <Text>stuff</Text>
+                            <Text>stuff</Text>
                         </VStack>
                         <Spacer/>
                         <VStack>
-                            <Text color="white">stuff</Text>
-                            <Text color="white">stuff</Text>
+                            <Text>stuff</Text>
+                            <Text>stuff</Text>
                         </VStack>
                     </Flex>
-                    <Text color="white">Kidoni Software © 2024</Text>
+                    <HStack verticalAlign="center">
+                        <FaRegCopyright size="16px"/><Text>Kidoni Software 2024</Text>
+                    </HStack>
                 </VStack>
             </Box>
         </footer>

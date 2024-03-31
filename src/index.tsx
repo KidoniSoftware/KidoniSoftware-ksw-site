@@ -5,29 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {ComponentPreviews, useInitial} from "./dev";
 import {DevSupport} from "@react-buddy/ide-toolbox";
-import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import {ChakraProvider} from "@chakra-ui/react";
-import ErrorPage from "./error_page";
-
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element:
-            <DevSupport ComponentPreviews={ComponentPreviews} useInitialHook={useInitial}>
-                <ChakraProvider>
-                    <App/>
-                </ChakraProvider>
-            </DevSupport>,
-        errorElement: <ErrorPage/>,
-    },
-]);
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router}/>
+        <DevSupport ComponentPreviews={ComponentPreviews} useInitialHook={useInitial}>
+            <ChakraProvider>
+                <App/>
+            </ChakraProvider>
+        </DevSupport>
     </React.StrictMode>
 );
 
