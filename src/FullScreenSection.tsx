@@ -1,11 +1,14 @@
 import * as React from "react";
-import {VStack} from "@chakra-ui/react";
+import {StackProps, VStack} from "@chakra-ui/react";
 
-// todo: remove need for the ts-ignore
-// @ts-ignore
-export default function FullScreenSection({children, isDarkBackground, ...boxProps}) {
+interface FullScreenLinkProps extends StackProps {
+    isDarkBackground: boolean
+}
+
+export default function FullScreenSection({isDarkBackground, children, ...boxProps}: FullScreenLinkProps) {
     return (
         <VStack
+            {...boxProps}
             backgroundColor={boxProps.backgroundColor}
             color={isDarkBackground ? "white" : "black"}
         >
