@@ -1,20 +1,9 @@
-import {Box, Flex, IconButton, LinkProps, Menu, MenuButton, MenuItem, MenuList, Spacer} from "@chakra-ui/react";
+import {Box, Flex, IconButton, Menu, MenuButton, MenuItem, MenuList, Spacer} from "@chakra-ui/react";
 import {GrProjects} from "react-icons/gr";
 import {TbWritingSign} from "react-icons/tb";
 import {FaBars, FaInfo} from "react-icons/fa6";
 
 export default function Header() {
-
-    const handleClick = (anchor: LinkProps) => () => {
-        const id = `${anchor.href}`;
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-            });
-        }
-    };
 
     return (
         <Box position="fixed"
