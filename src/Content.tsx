@@ -1,12 +1,7 @@
-import React from 'react';
-import './App.css';
-import Header from "./Header";
-import Content from "./Content";
-import Footer from "./Footer";
-import {Box, VStack} from "@chakra-ui/react";
+import {Box, Heading, VStack} from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 
-function App() {
+export default function Content() {
     return (
         <FullScreenSection isDarkBackground="black"
                            backgroundColor="#2A4365"
@@ -15,15 +10,9 @@ function App() {
         >
             <Box>
                 <VStack>
-                    <main>
-                        <Header/>
-                        <Content/>
-                        <Footer/>
-                    </main>
+                    <Heading>Kidoni Software</Heading>
                 </VStack>
             </Box>
         </FullScreenSection>
     );
 }
-
-export default App;
