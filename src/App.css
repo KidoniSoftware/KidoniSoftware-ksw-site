@@ -1,3 +1,9 @@
 .App {
     text-align: center;
 }
+
+.IntroSection {
+    background-image: url("assets/chi.png");
+    background-size: cover;
+    background-attachment: scroll;
+}
