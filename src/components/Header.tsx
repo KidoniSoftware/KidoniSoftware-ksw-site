@@ -2,7 +2,7 @@ import {Box, Flex, IconButton, Image, Link, Menu, MenuButton, MenuItem, MenuList
 import {GrProjects} from "react-icons/gr";
 import {TbInfoCircle, TbWritingSign} from "react-icons/tb";
 import {FaBars} from "react-icons/fa6";
-import logo from "./assets/logo.png";
+import logo from "../assets/logo.png";
 
 export default function Header() {
     return (
@@ -12,7 +12,7 @@ export default function Header() {
              right={0}>
             <nav>
                 <Flex p={2} verticalAlign="middle">
-                    <Link href="/#">
+                    <Link href="/public#">
                         <Image src={logo} borderRadius="full" boxSize="48px" fit="cover" backgroundColor="#3182CE"
                                alt="Home"/>
                     </Link>
