@@ -3,6 +3,7 @@ import {PaletteTree} from "./palette";
 import Header from "../Header";
 import Content from "../Content";
 import App from "../App";
+import BlogSection from "../BlogSection";
 
 const ComponentPreviews = () => {
     return (
@@ -15,6 +16,9 @@ const ComponentPreviews = () => {
             </ComponentPreview>
             <ComponentPreview path="/App">
                 <App/>
+            </ComponentPreview>
+            <ComponentPreview path="/BlogSection">
+                <BlogSection/>
             </ComponentPreview>
         </Previews>
     );

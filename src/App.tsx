@@ -5,7 +5,7 @@ import Content from "./Content";
 import Footer from "./Footer";
 import {Box} from "@chakra-ui/react";
 
-function App() {
+export default function App() {
     return (
         <Box className="App">
             <Header/>
@@ -16,5 +16,3 @@ function App() {
         </Box>
     );
 }
-
-export default App;
