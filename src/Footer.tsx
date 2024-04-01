@@ -6,9 +6,11 @@ export default function Footer() {
     return (
         <footer>
             <Box color="black" margin="0 auto">
-                <Divider borderColor="gray"/>
-                <VStack spacing={4}
-                        divider={<StackDivider borderColor="gray"/>}
+                <Divider borderColor="black"/>
+                <VStack
+                    p={2}
+                    spacing={4}
+                    divider={<StackDivider borderColor="black"/>}
                 >
                     <Flex gap={8}>
                         <VStack>
@@ -21,7 +23,7 @@ export default function Footer() {
                             <Text>stuff</Text>
                         </VStack>
                     </Flex>
-                    <HStack verticalAlign="center">
+                    <HStack verticalAlign="middle">
                         <FaRegCopyright size="16px"/><Text>Kidoni Software 2024</Text>
                     </HStack>
                 </VStack>

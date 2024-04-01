@@ -1,9 +1,13 @@
 .App {
     text-align: center;
+    background-color: #fffbed;
 }
 
 .IntroSection {
     background-image: url("assets/chi.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-attachment: scroll;
+    background-position: right;
+    background-position-y: 120px;
 }

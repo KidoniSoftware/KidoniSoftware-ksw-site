@@ -11,9 +11,10 @@ export default function Header() {
              left={0}
              right={0}>
             <nav>
-                <Flex p={8} verticalAlign="middle">
+                <Flex p={2} verticalAlign="middle">
                     <Link href="/#">
-                        <Image src={logo} borderRadius="full" boxSize="48px" fit="cover" backgroundColor="#3182CE"/>
+                        <Image src={logo} borderRadius="full" boxSize="48px" fit="cover" backgroundColor="#3182CE"
+                               alt="Home"/>
                     </Link>
                     <Spacer/>
                     <Menu colorScheme="blue">

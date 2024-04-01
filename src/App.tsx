@@ -3,16 +3,25 @@ import './App.css';
 import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
-import {Box} from "@chakra-ui/react";
+import {Grid, GridItem} from "@chakra-ui/react";
 
 export default function App() {
     return (
-        <Box className="App">
-            <Header/>
-            <main>
+        <Grid className="App"
+              templateAreas={`"header"
+                  "main"
+                  "footer"
+                  `}
+        >
+            <GridItem area={'header'}>
+                <Header/>
+            </GridItem>
+            <GridItem area={'main'}>
                 <Content/>
+            </GridItem>
+            <GridItem bg='lightskyblue' area={'footer'}>
                 <Footer/>
-            </main>
-        </Box>
+            </GridItem>
+        </Grid>
     );
 }
