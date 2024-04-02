@@ -1,4 +1,4 @@
-import {Container, Flex, Icon} from "@chakra-ui/react";
+import {Flex, Icon} from "@chakra-ui/react";
 import React from "react";
 
 import {FaGithub, FaLinkedin, FaMedium, FaStackOverflow} from "react-icons/fa6";
