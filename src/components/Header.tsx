@@ -13,12 +13,14 @@ export default function Header() {
             <nav>
                 <Flex p={2} verticalAlign="middle">
                     <Link href="/public#">
-                        <Image src={logo} borderRadius="full" boxSize="48px" fit="cover" backgroundColor="#3182CE"
+                        <Image src={logo} borderRadius="full" boxSize="60px" fit="cover" backgroundColor="#3182CE"
                                alt="Home"/>
                     </Link>
                     <Spacer/>
                     <Menu colorScheme="blue">
-                        <MenuButton as={IconButton} icon={<FaBars/>} colorScheme="blue" size="lg" isRound={true}/>
+                        <MenuButton as={IconButton} icon={<FaBars size="24px" color="#8c0121"/>} colorScheme="blue"
+                                    boxSize="60px"
+                                    isRound={true}/>
                         <MenuList color="black">
                             <MenuItem as="a" href="/#projects-section"
                                       icon={<GrProjects size="18px"/>}>Featured Projects</MenuItem>

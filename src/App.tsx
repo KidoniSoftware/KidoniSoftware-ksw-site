@@ -19,7 +19,7 @@ export default function App() {
             <GridItem area={'main'}>
                 <Content/>
             </GridItem>
-            <GridItem bg='lightskyblue' area={'footer'}>
+            <GridItem area={'footer'}>
                 <Footer/>
             </GridItem>
         </Grid>

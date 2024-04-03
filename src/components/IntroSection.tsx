@@ -1,14 +1,14 @@
 import React from "react";
 import FullScreenSection from "./FullScreenSection";
-import {Center, Heading, Text, VStack} from "@chakra-ui/react";
+import {Center, Text, VStack} from "@chakra-ui/react";
 
 export default function IntroSection() {
     return (
         <FullScreenSection className="IntroSection" p={8} spacing={8}>
             <Center>
                 <VStack>
-                    <Heading as="h1" id="intro-section">Kidoni Software</Heading>
-                    <Text>A Software Consultancy</Text>
+                    <Text id="intro-section" fontSize="32pt" color="#8c0121">Kidoni Software</Text>
+                    <Text fontSize="16pt" color="#8c0121">A Software Consultancy</Text>
                 </VStack>
             </Center>
         </FullScreenSection>

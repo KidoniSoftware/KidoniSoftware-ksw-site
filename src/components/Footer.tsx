@@ -6,7 +6,7 @@ import Socials from "./Socials";
 export default function Footer() {
     return (
         <footer>
-            <Box color="black" margin="0 auto">
+            <Box bg="#8c0121" color="black" margin="0 auto">
                 <Divider borderColor="black"/>
                 <Center>
                     <VStack p={2} spacing={4}>

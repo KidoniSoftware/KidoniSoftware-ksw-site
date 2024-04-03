@@ -1,6 +1,6 @@
 .App {
     text-align: center;
-    background-color: #fffbed;
+    background-color: #3182ce;
 }
 
 .IntroSection {
@@ -8,6 +8,5 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: right;
-    background-position-y: 120px;
+    background-position: center;
 }
