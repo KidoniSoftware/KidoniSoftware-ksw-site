@@ -8,11 +8,11 @@ export default function Header() {
     return (
         <Box position="fixed"
              top={0}
-             left={0}
-             right={0}>
+             left={10}
+             right={10}>
             <nav>
                 <Flex p={2} verticalAlign="middle">
-                    <Link href="/public#">
+                    <Link href="/#">
                         <Image src={logo} borderRadius="full" boxSize="60px" fit="cover" backgroundColor="#3182CE"
                                alt="Home"/>
                     </Link>
